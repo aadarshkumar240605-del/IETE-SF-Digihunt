@@ -88,23 +88,23 @@ export default function Home() {
       {/* HERO */}
       <section className="relative overflow-hidden border-b border-border px-6 py-28 sm:py-36">
         <div className="mx-auto flex max-w-4xl flex-col items-center gap-6 text-center">
-          <Badge variant="outline" className="font-mono-data text-accent-foreground">
+          <Badge variant="outline" className="font-mono-data text-accent-foreground animate-in fade-in slide-in-from-bottom-3 duration-500 fill-mode-both delay-0">
             4 SEPTEMBER 2026 · 3 MEMBERS PER TEAM
           </Badge>
-          <h1 className="glow-cyan text-5xl font-bold tracking-tight text-primary sm:text-7xl">
+          <h1 className="glow-cyan text-5xl font-bold tracking-tight text-primary sm:text-7xl animate-in fade-in slide-in-from-bottom-3 duration-500 fill-mode-both delay-150">
             DIGIHUNT
           </h1>
-          <h2 className="text-2xl font-semibold tracking-widest text-foreground sm:text-4xl">
+          <h2 className="text-2xl font-semibold tracking-widest text-foreground sm:text-4xl animate-in fade-in slide-in-from-bottom-3 duration-500 fill-mode-both delay-300">
             THE MISSING CODE
           </h2>
-          <p className="font-mono-data text-sm text-secondary sm:text-base">
+          <p className="font-mono-data text-sm text-secondary sm:text-base animate-in fade-in slide-in-from-bottom-2 duration-500 fill-mode-both delay-[450ms]">
             A Story-Driven Technical Challenge
           </p>
-          <p className="max-w-xl text-balance text-muted-foreground">
+          <p className="max-w-xl text-balance text-muted-foreground animate-in fade-in slide-in-from-bottom-2 duration-500 fill-mode-both delay-[450ms]">
             The system has been compromised. The code is missing. Your team
             has been chosen to find it.
           </p>
-          <div className="mt-4 flex flex-wrap justify-center gap-4">
+          <div className="mt-4 flex flex-wrap justify-center gap-4 animate-in fade-in slide-in-from-bottom-3 duration-500 fill-mode-both delay-[600ms]">
             <Button
               size="lg"
               className="glow-border font-mono-data"
@@ -125,7 +125,7 @@ export default function Home() {
           </div>
           <a
             href="#story"
-            className="font-mono-data text-xs tracking-wide text-muted-foreground underline-offset-4 hover:text-primary hover:underline"
+            className="font-mono-data text-xs tracking-wide text-muted-foreground underline-offset-4 hover:text-primary hover:underline animate-in fade-in duration-500 fill-mode-both delay-[600ms]"
           >
             VIEW MISSION ↓
           </a>
