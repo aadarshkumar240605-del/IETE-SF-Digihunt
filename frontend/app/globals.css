@@ -112,4 +112,33 @@
   .font-mono-data {
     font-family: var(--font-geist-mono), ui-monospace, monospace;
   }
+
+  /* ── Sys-terminal ambient animations ── */
+  .sys-label {
+    font-family: var(--font-geist-mono), ui-monospace, monospace;
+    font-size: 9px;
+    letter-spacing: 0.14em;
+    pointer-events: none;
+    user-select: none;
+    text-shadow: 0 0 10px oklch(0.78 0.15 195 / 22%);
+  }
+  .sys-blink {
+    animation: sys-blink 1.7s ease-in-out infinite;
+  }
+  .sys-fade {
+    animation: sys-fade 3.2s ease-in-out infinite;
+  }
+  .sys-fade-slow {
+    animation: sys-fade 5s ease-in-out infinite;
+  }
+}
+
+@keyframes sys-blink {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.15; }
+}
+
+@keyframes sys-fade {
+  0%, 100% { opacity: 0.65; }
+  50%       { opacity: 1; }
 }
