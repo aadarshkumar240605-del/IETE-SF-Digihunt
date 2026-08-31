@@ -30,7 +30,7 @@ function CodeFragment({
   delay = 0,
   duration = 7,
   driftY = -18,
-  color = "oklch(0.78 0.15 195 / 55%)",
+  color = "oklch(0.91 0.28 128 / 55%)",
   size = "10px",
   smHidden = false,
   lgHidden = false,
@@ -97,16 +97,16 @@ export function HeroSection() {
 
       {/* Floating code fragments — placed around the hero */}
       {/* Left side / above content */}
-      <CodeFragment text="{ }"          x="1%"   y="8%"   delay={0}   duration={8}  driftY={-14} color="oklch(0.78 0.15 195 / 50%)" size="13px" smHidden />
-      <CodeFragment text="< />"         x="2%"   y="55%"  delay={1.4} duration={9}  driftY={-20} color="oklch(0.78 0.15 195 / 45%)" size="12px" smHidden />
-      <CodeFragment text="010010"       x="1%"   y="30%"  delay={2.1} duration={11} driftY={-16} color="oklch(0.78 0.15 195 / 35%)" size="10px" smHidden />
-      <CodeFragment text="SYS://"       x="3%"   y="78%"  delay={0.8} duration={10} driftY={-12} color="oklch(0.72 0.17 155 / 55%)" size="11px" smHidden />
-      <CodeFragment text="404"          x="88%"  y="12%"  delay={1.7} duration={9}  driftY={-18} color="oklch(0.78 0.15 195 / 40%)" size="12px" smHidden lgHidden={false} />
-      <CodeFragment text="AUTH_OK"      x="88%"  y="82%"  delay={0.5} duration={8}  driftY={-15} color="oklch(0.72 0.17 155 / 50%)" size="10px" smHidden />
-      <CodeFragment text="ACCESS"       x="92%"  y="48%"  delay={2.8} duration={12} driftY={-10} color="oklch(0.78 0.15 195 / 40%)" size="10px" lgHidden={false} smHidden />
-      <CodeFragment text="CODE_FRAG"    x="0.5%" y="90%"  delay={3.2} duration={13} driftY={-22} color="oklch(0.78 0.15 195 / 35%)" size="9px"  smHidden />
-      <CodeFragment text="0101"         x="90%"  y="65%"  delay={1.1} duration={10} driftY={-14} color="oklch(0.72 0.17 155 / 40%)" size="11px" smHidden />
-      <CodeFragment text="ENCRYPT"      x="44%"  y="2%"   delay={2.4} duration={14} driftY={-8}  color="oklch(0.78 0.15 195 / 30%)" size="9px"  smHidden />
+      <CodeFragment text="{ }"          x="1%"   y="8%"   delay={0}   duration={8}  driftY={-14} color="oklch(0.91 0.28 128 / 55%)" size="13px" smHidden />
+      <CodeFragment text="< />"         x="2%"   y="55%"  delay={1.4} duration={9}  driftY={-20} color="oklch(0.91 0.28 128 / 50%)" size="12px" smHidden />
+      <CodeFragment text="010010"       x="1%"   y="30%"  delay={2.1} duration={11} driftY={-16} color="oklch(0.91 0.28 128 / 40%)" size="10px" smHidden />
+      <CodeFragment text="SYS://"       x="3%"   y="78%"  delay={0.8} duration={10} driftY={-12} color="oklch(0.80 0.22 142 / 60%)" size="11px" smHidden />
+      <CodeFragment text="404"          x="88%"  y="12%"  delay={1.7} duration={9}  driftY={-18} color="oklch(0.91 0.28 128 / 45%)" size="12px" smHidden lgHidden={false} />
+      <CodeFragment text="AUTH_OK"      x="88%"  y="82%"  delay={0.5} duration={8}  driftY={-15} color="oklch(0.80 0.22 142 / 55%)" size="10px" smHidden />
+      <CodeFragment text="ACCESS"       x="92%"  y="48%"  delay={2.8} duration={12} driftY={-10} color="oklch(0.91 0.28 128 / 45%)" size="10px" lgHidden={false} smHidden />
+      <CodeFragment text="CODE_FRAG"    x="0.5%" y="90%"  delay={3.2} duration={13} driftY={-22} color="oklch(0.91 0.28 128 / 40%)" size="9px"  smHidden />
+      <CodeFragment text="0101"         x="90%"  y="65%"  delay={1.1} duration={10} driftY={-14} color="oklch(0.80 0.22 142 / 45%)" size="11px" smHidden />
+      <CodeFragment text="ENCRYPT"      x="44%"  y="2%"   delay={2.4} duration={14} driftY={-8}  color="oklch(0.91 0.28 128 / 35%)" size="9px"  smHidden />
 
       {/* ── Main grid ── */}
       <div className="relative mx-auto grid w-full max-w-7xl items-center gap-8 lg:grid-cols-[1fr_480px] lg:gap-16">
@@ -140,7 +140,7 @@ export function HeroSection() {
           <div className="mt-4 flex flex-wrap justify-center gap-4 lg:justify-start animate-in fade-in slide-in-from-bottom-3 duration-500 fill-mode-both delay-[600ms]">
             <Button
               size="lg"
-              className="glow-border font-mono-data shadow-[0_0_24px_oklch(0.78_0.15_195/30%)] hover:shadow-[0_0_36px_oklch(0.78_0.15_195/55%)]"
+              className="glow-border font-mono-data shadow-[0_0_24px_oklch(0.91_0.28_128/30%)] hover:shadow-[0_0_36px_oklch(0.91_0.28_128/60%)]"
               render={<a href="/register" />}
               nativeButton={false}
             >

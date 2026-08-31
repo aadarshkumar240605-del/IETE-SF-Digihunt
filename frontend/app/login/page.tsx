@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { ApiError, login } from "@/lib/api";
 
 const inputClass =
@@ -39,72 +39,79 @@ export default function LoginPage() {
   }
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center px-6 py-16">
-      <Card className="glow-border w-full max-w-md">
-        <CardHeader className="text-center">
-          <CardTitle className="glow-cyan font-mono-data text-2xl text-primary">
-            DIGIHUNT // TEAM ACCESS
-          </CardTitle>
-        </CardHeader>
-        <CardContent>
-          <form onSubmit={handleSubmit} className="space-y-4">
-            <div className="space-y-2">
-              <label
-                htmlFor="login-email"
-                className="font-mono-data text-xs uppercase tracking-wide text-secondary"
-              >
-                Email
-              </label>
-              <input
-                id="login-email"
-                className={inputClass}
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                autoComplete="email"
-                required
-              />
-            </div>
-            <div className="space-y-2">
-              <label
-                htmlFor="login-password"
-                className="font-mono-data text-xs uppercase tracking-wide text-secondary"
-              >
-                Password
-              </label>
-              <input
-                id="login-password"
-                className={inputClass}
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                autoComplete="current-password"
-                required
-              />
-            </div>
+    <main className="flex min-h-screen flex-col items-center px-6 py-16">
+      <div className="w-full max-w-md space-y-8">
+        {/* ── Page-level heading — mirrors Registration page pattern ── */}
+        <div className="text-center">
+          <h1 className="glow-cyan font-mono-data text-3xl font-bold text-primary">
+            DIGIHUNT // LOGIN
+          </h1>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Enter your credentials to access the hunt.
+          </p>
+        </div>
 
-            {deniedAccess && (
-              <p className="rounded-md border border-destructive/40 bg-destructive/10 px-4 py-3 font-mono-data text-sm text-destructive">
-                ACCESS DENIED — invalid email or password.
-              </p>
-            )}
-            {error && (
-              <p className="rounded-md border border-destructive/40 bg-destructive/10 px-4 py-3 font-mono-data text-sm text-destructive">
-                {error}
-              </p>
-            )}
+        <Card className="glow-border w-full">
+          <CardContent className="pt-6">
+            <form onSubmit={handleSubmit} className="space-y-4">
+              <div className="space-y-2">
+                <label
+                  htmlFor="login-email"
+                  className="font-mono-data text-xs uppercase tracking-wide text-secondary"
+                >
+                  Email
+                </label>
+                <input
+                  id="login-email"
+                  className={inputClass}
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  autoComplete="email"
+                  required
+                />
+              </div>
+              <div className="space-y-2">
+                <label
+                  htmlFor="login-password"
+                  className="font-mono-data text-xs uppercase tracking-wide text-secondary"
+                >
+                  Password
+                </label>
+                <input
+                  id="login-password"
+                  className={inputClass}
+                  type="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  autoComplete="current-password"
+                  required
+                />
+              </div>
 
-            <Button
-              type="submit"
-              size="lg"
-              className="glow-border w-full font-mono-data"
-              disabled={submitting}
-            >
-              {submitting ? "AUTHENTICATING..." : "ENTER THE HUNT"}
-            </Button>
-          </form>
-        </CardContent>
-      </Card>
+              {deniedAccess && (
+                <p className="rounded-md border border-destructive/40 bg-destructive/10 px-4 py-3 font-mono-data text-sm text-destructive">
+                  ACCESS DENIED — invalid email or password.
+                </p>
+              )}
+              {error && (
+                <p className="rounded-md border border-destructive/40 bg-destructive/10 px-4 py-3 font-mono-data text-sm text-destructive">
+                  {error}
+                </p>
+              )}
+
+              <Button
+                type="submit"
+                size="lg"
+                className="glow-border w-full font-mono-data"
+                disabled={submitting}
+              >
+                {submitting ? "AUTHENTICATING..." : "ENTER THE HUNT"}
+              </Button>
+            </form>
+          </CardContent>
+        </Card>
+      </div>
     </main>
   );
 }

@@ -69,7 +69,7 @@ function ConnectionLine({
   return (
     <motion.line
       x1={x1} y1={y1} x2={x2} y2={y2}
-      stroke="oklch(0.78 0.15 195 / 20%)"
+      stroke="oklch(0.91 0.28 128 / 22%)"
       strokeWidth="1"
       strokeDasharray="4 6"
       initial={{ pathLength: 0, opacity: 0 }}
@@ -93,14 +93,14 @@ export function HeroVisual() {
         fill="none"
       >
         {/* Central crosshair rings */}
-        <circle cx="180" cy="170" r="70" stroke="oklch(0.78 0.15 195 / 12%)" strokeWidth="1" />
-        <circle cx="180" cy="170" r="110" stroke="oklch(0.78 0.15 195 / 7%)" strokeWidth="1" strokeDasharray="6 8" />
-        <circle cx="180" cy="170" r="145" stroke="oklch(0.78 0.15 195 / 4%)" strokeWidth="1" />
+        <circle cx="180" cy="170" r="70" stroke="oklch(0.91 0.28 128 / 16%)" strokeWidth="1" />
+        <circle cx="180" cy="170" r="110" stroke="oklch(0.91 0.28 128 / 10%)" strokeWidth="1" strokeDasharray="6 8" />
+        <circle cx="180" cy="170" r="145" stroke="oklch(0.91 0.28 128 / 6%)" strokeWidth="1" />
         {/* Crosshair lines */}
-        <line x1="180" y1="30" x2="180" y2="90" stroke="oklch(0.78 0.15 195 / 30%)" strokeWidth="1" />
-        <line x1="180" y1="250" x2="180" y2="310" stroke="oklch(0.78 0.15 195 / 30%)" strokeWidth="1" />
-        <line x1="40" y1="170" x2="100" y2="170" stroke="oklch(0.78 0.15 195 / 30%)" strokeWidth="1" />
-        <line x1="260" y1="170" x2="320" y2="170" stroke="oklch(0.78 0.15 195 / 30%)" strokeWidth="1" />
+        <line x1="180" y1="30" x2="180" y2="90" stroke="oklch(0.91 0.28 128 / 38%)" strokeWidth="1" />
+        <line x1="180" y1="250" x2="180" y2="310" stroke="oklch(0.91 0.28 128 / 38%)" strokeWidth="1" />
+        <line x1="40" y1="170" x2="100" y2="170" stroke="oklch(0.91 0.28 128 / 38%)" strokeWidth="1" />
+        <line x1="260" y1="170" x2="320" y2="170" stroke="oklch(0.91 0.28 128 / 38%)" strokeWidth="1" />
         {/* Connection lines to nodes */}
         <ConnectionLine x1={180} y1={170} x2={80} y2={80} delay={0.4} />
         <ConnectionLine x1={180} y1={170} x2={290} y2={90} delay={0.7} />
@@ -115,8 +115,8 @@ export function HeroVisual() {
         animate={{ scale: [1, 1.08, 1], opacity: [0.8, 1, 0.8] }}
         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
       >
-        <div className="size-10 rounded-full border border-primary/40 bg-primary/10 flex items-center justify-center shadow-[0_0_20px_oklch(0.78_0.15_195/30%)]">
-          <div className="size-3 rounded-full bg-primary/80 shadow-[0_0_8px_oklch(0.78_0.15_195/80%)]" />
+        <div className="size-10 rounded-full border border-primary/45 bg-primary/10 flex items-center justify-center shadow-[0_0_20px_oklch(0.91_0.28_128/35%)]">
+          <div className="size-3 rounded-full bg-primary/85 shadow-[0_0_8px_oklch(0.91_0.28_128/85%)]" />
         </div>
       </motion.div>
 
@@ -142,13 +142,13 @@ export function HeroVisual() {
         fill="none"
       >
         {/* Top-left bracket */}
-        <path d="M20 50 L20 20 L50 20" stroke="oklch(0.78 0.15 195)" strokeWidth="1.5" />
+        <path d="M20 50 L20 20 L50 20" stroke="oklch(0.91 0.28 128)" strokeWidth="1.5" />
         {/* Top-right bracket */}
-        <path d="M310 20 L340 20 L340 50" stroke="oklch(0.78 0.15 195)" strokeWidth="1.5" />
+        <path d="M310 20 L340 20 L340 50" stroke="oklch(0.91 0.28 128)" strokeWidth="1.5" />
         {/* Bottom-left bracket */}
-        <path d="M20 290 L20 320 L50 320" stroke="oklch(0.78 0.15 195)" strokeWidth="1.5" />
+        <path d="M20 290 L20 320 L50 320" stroke="oklch(0.91 0.28 128)" strokeWidth="1.5" />
         {/* Bottom-right bracket */}
-        <path d="M310 320 L340 320 L340 290" stroke="oklch(0.78 0.15 195)" strokeWidth="1.5" />
+        <path d="M310 320 L340 320 L340 290" stroke="oklch(0.91 0.28 128)" strokeWidth="1.5" />
       </svg>
 
       {/* Code fragment labels */}

@@ -207,7 +207,7 @@ export default function Home() {
             className="mx-auto mb-6 h-px max-w-xl"
             style={{
               background:
-                "linear-gradient(90deg, transparent 0%, oklch(0.78 0.15 195 / 20%) 30%, oklch(0.78 0.15 195 / 35%) 50%, oklch(0.78 0.15 195 / 20%) 70%, transparent 100%)",
+                "linear-gradient(90deg, transparent 0%, oklch(0.91 0.28 128 / 22%) 30%, oklch(0.91 0.28 128 / 38%) 50%, oklch(0.91 0.28 128 / 22%) 70%, transparent 100%)",
             }}
           />
 
@@ -215,11 +215,11 @@ export default function Home() {
             {["01 FIND", "02 INVESTIGATE", "03 BUILD", "MASTER CODE"].map(
               (step, i, arr) => (
                 <StaggerItem key={step} className="flex items-center gap-3 sm:gap-6">
-                  <span className="glow-border rounded-md border border-border bg-card px-4 py-2 text-foreground transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.04] hover:shadow-[0_0_16px_oklch(0.78_0.15_195/40%)] hover:border-primary/60 cursor-default select-none">
+                  <span className="glow-border rounded-md border border-border bg-card px-4 py-2 text-foreground transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.04] hover:border-primary/68 hover:shadow-[0_0_22px_oklch(0.91_0.28_128/52%),0_0_44px_oklch(0.91_0.28_128/20%)] cursor-default select-none">
                     {step}
                   </span>
                   {i < arr.length - 1 && (
-                    <span className="text-primary transition-all duration-300 hover:text-primary hover:drop-shadow-[0_0_6px_oklch(0.78_0.15_195/70%)] sm:rotate-0 rotate-90">
+                    <span className="text-primary transition-all duration-300 hover:text-primary hover:drop-shadow-[0_0_6px_oklch(0.91_0.28_128/80%)] sm:rotate-0 rotate-90">
                       →
                     </span>
                   )}
@@ -234,7 +234,7 @@ export default function Home() {
             className="mx-auto mt-6 h-px max-w-xl"
             style={{
               background:
-                "linear-gradient(90deg, transparent 0%, oklch(0.78 0.15 195 / 20%) 30%, oklch(0.78 0.15 195 / 35%) 50%, oklch(0.78 0.15 195 / 20%) 70%, transparent 100%)",
+                "linear-gradient(90deg, transparent 0%, oklch(0.91 0.28 128 / 22%) 30%, oklch(0.91 0.28 128 / 38%) 50%, oklch(0.91 0.28 128 / 22%) 70%, transparent 100%)",
             }}
           />
         </div>
@@ -256,7 +256,7 @@ export default function Home() {
               const RoundIcon = r.icon;
               return (
                 <StaggerItem key={r.id}>
-                  <Card className="glow-border relative transition-all duration-300 hover:-translate-y-2 hover:shadow-[0_0_28px_oklch(0.78_0.15_195/18%)]">
+                  <Card className="glow-border relative transition-all duration-300 hover:-translate-y-2 hover:border-primary/55 hover:shadow-[0_0_48px_oklch(0.91_0.28_128/52%),0_0_90px_oklch(0.91_0.28_128/18%)]">
                     {/* Round system identity label — top-right corner of card */}
                     <span
                       aria-hidden="true"
@@ -270,7 +270,7 @@ export default function Home() {
                           ROUND {r.id}
                         </span>
                         <RoundIcon
-                          className="size-4 text-primary/60 transition-all duration-300 group-hover:text-primary group-hover:drop-shadow-[0_0_6px_oklch(0.78_0.15_195/70%)]"
+                          className="size-4 text-primary/65 transition-all duration-300 group-hover:text-primary group-hover:drop-shadow-[0_0_8px_oklch(0.91_0.28_128/90%)]"
                           strokeWidth={1.5}
                         />
                       </div>
@@ -309,7 +309,7 @@ export default function Home() {
           <StaggerContainer className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {CASES.map((c) => (
               <StaggerItem key={c.n}>
-                <Card className="relative text-center transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_0_20px_oklch(0.78_0.15_195/14%)] group">
+                <Card className="relative text-center transition-all duration-300 hover:-translate-y-1 hover:border-primary/52 hover:shadow-[0_0_38px_oklch(0.91_0.28_128/48%),0_0_72px_oklch(0.91_0.28_128/16%)] group">
                   {/* Tiny case ID label — card top-right */}
                   <span
                     aria-hidden="true"
@@ -320,7 +320,7 @@ export default function Home() {
                   <CardContent className="py-6">
                     <div className="mb-3 flex items-center justify-center">
                       <FolderLock
-                        className="size-5 text-primary/50 transition-all duration-300 group-hover:text-primary group-hover:drop-shadow-[0_0_6px_oklch(0.78_0.15_195/60%)]"
+                        className="size-5 text-primary/60 transition-all duration-300 group-hover:text-primary group-hover:drop-shadow-[0_0_10px_oklch(0.91_0.28_128/88%)]"
                         strokeWidth={1.5}
                       />
                     </div>
@@ -356,7 +356,7 @@ export default function Home() {
           </div>
 
           {/* Tech panel */}
-          <div className="relative overflow-hidden rounded-lg border border-primary/15 bg-card/40 px-8 py-10 shadow-[0_0_40px_oklch(0.78_0.15_195/6%)]">
+          <div className="relative overflow-hidden rounded-lg border border-primary/18 bg-card/40 px-8 py-10 shadow-[0_0_40px_oklch(0.91_0.28_128/8%)]">
             {/* Corner bracket decorations — existing */}
             <span aria-hidden="true" className="pointer-events-none absolute left-3 top-3 font-mono-data text-[10px] text-primary/20 select-none">[</span>
             <span aria-hidden="true" className="pointer-events-none absolute right-3 top-3 font-mono-data text-[10px] text-primary/20 select-none">]</span>
@@ -375,7 +375,7 @@ export default function Home() {
                 <StaggerItem key={t}>
                   <Badge
                     variant="secondary"
-                    className="font-mono-data text-sm px-3 py-1 transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.08] hover:shadow-[0_0_10px_oklch(0.78_0.15_195/35%)] cursor-default"
+                    className="font-mono-data text-sm px-3 py-1 transition-all duration-300 hover:-translate-y-0.5 hover:scale-[1.08] hover:shadow-[0_0_16px_oklch(0.91_0.28_128/60%)] cursor-default"
                   >
                     {t}
                   </Badge>
@@ -405,7 +405,7 @@ export default function Home() {
           </div>
 
           {/* Protocol panel */}
-          <div className="relative overflow-hidden rounded-lg border border-primary/15 bg-card/40 px-8 py-8 shadow-[0_0_40px_oklch(0.78_0.15_195/6%),inset_0_0_0_1px_oklch(0.78_0.15_195/4%)]">
+          <div className="relative overflow-hidden rounded-lg border border-primary/18 bg-card/40 px-8 py-8 shadow-[0_0_40px_oklch(0.91_0.28_128/8%),inset_0_0_0_1px_oklch(0.91_0.28_128/5%)]">
             {/* Existing corner decorations */}
             <span aria-hidden="true" className="pointer-events-none absolute left-3 top-3 font-mono-data text-[9px] text-primary/40 select-none tracking-widest">PROTO_v2</span>
             <span aria-hidden="true" className="pointer-events-none absolute right-3 top-3 font-mono-data text-[9px] text-primary/40 select-none">SYS::RULES</span>
@@ -416,7 +416,7 @@ export default function Home() {
               {RULES.map((r, i) => (
                 <li
                   key={r}
-                  className="flex gap-4 rounded-md border border-border bg-background/60 px-5 py-4 text-base text-muted-foreground transition-all duration-300 hover:translate-x-1 hover:border-primary/40 hover:bg-primary/5 hover:text-foreground"
+                  className="flex gap-4 border border-border bg-background/60 px-5 py-4 text-base text-muted-foreground transition-all duration-300 hover:translate-x-1 hover:border-primary/50 hover:bg-primary/[0.04] hover:text-foreground hover:shadow-[inset_0_0_16px_oklch(0.91_0.28_128/6%),0_0_0_1px_oklch(0.91_0.28_128/22%)]"
                 >
                   <span className="font-mono-data text-xs font-bold text-primary/60 shrink-0 w-7 pt-0.5 text-right tabular-nums">
                     {String(i + 1).padStart(2, "0")}
@@ -449,7 +449,7 @@ export default function Home() {
           </div>
 
           {/* FAQ panel */}
-          <div className="relative overflow-hidden rounded-lg border border-primary/15 bg-card/40 px-8 py-6 shadow-[0_0_40px_oklch(0.78_0.15_195/6%)]">
+          <div className="relative overflow-hidden rounded-lg border border-primary/18 bg-card/40 px-8 py-6 shadow-[0_0_40px_oklch(0.91_0.28_128/8%)]">
             {/* Existing top-right label */}
             <span aria-hidden="true" className="pointer-events-none absolute right-3 top-3 font-mono-data text-[9px] text-primary/40 select-none">FAQ::OPEN</span>
             {/* New: bottom-left */}
@@ -460,7 +460,7 @@ export default function Home() {
                 <AccordionItem
                   key={f.q}
                   value={`item-${i}`}
-                  className="border-b border-primary/10 last:border-0"
+                  className="border-b border-primary/12 last:border-0"
                 >
                   <AccordionTrigger className="py-5 text-base font-medium text-foreground hover:text-primary hover:no-underline transition-colors duration-200">
                     {f.q}

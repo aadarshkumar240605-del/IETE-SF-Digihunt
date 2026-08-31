@@ -75,9 +75,9 @@ export function BootSequence() {
           e.stopPropagation();
           skip();
         }}
-        className="mt-6 rounded-md border border-border px-4 py-1.5 font-mono-data text-xs uppercase tracking-widest text-muted-foreground outline-none hover:border-primary hover:text-primary focus:ring-2 focus:ring-ring"
+        className="mt-6 border border-border px-4 py-1.5 font-mono-data text-xs uppercase tracking-[0.22em] text-muted-foreground outline-none transition-all duration-200 hover:border-primary/65 hover:text-primary hover:shadow-[0_0_12px_oklch(0.91_0.28_128/30%)] focus:ring-2 focus:ring-ring"
       >
-        Skip
+        [ SKIP ]
       </button>
     </div>
   );

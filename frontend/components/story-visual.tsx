@@ -18,9 +18,9 @@ function Fragment({
 }) {
   return (
     <motion.div
-      className="absolute font-mono-data text-[10px] text-primary/50 rounded border border-primary/15 bg-card/50 px-2 py-0.5 select-none backdrop-blur-sm"
+      className="absolute font-mono-data text-[10px] text-primary/75 border border-primary/40 bg-card/65 px-2 py-0.5 select-none backdrop-blur-sm"
       style={{ left: x, top: y, rotate }}
-      animate={{ y: [0, -6, 0], opacity: [0.5, 0.8, 0.5] }}
+      animate={{ y: [0, -6, 0], opacity: [0.65, 1, 0.65] }}
       transition={{ duration: 4 + delay, delay, repeat: Infinity, ease: "easeInOut" }}
     >
       {label}
@@ -45,15 +45,15 @@ function OrbitIcon({
 
   return (
     <motion.div
-      className="absolute flex items-center justify-center size-9 rounded-lg border border-primary/20 bg-card/70 backdrop-blur-sm"
+      className="absolute flex items-center justify-center size-9 border border-primary/38 bg-card/80 backdrop-blur-sm"
       style={{
         left: `calc(50% + ${x}px - 18px)`,
         top: `calc(50% + ${y}px - 18px)`,
       }}
-      animate={{ scale: [1, 1.08, 1], opacity: [0.6, 1, 0.6] }}
+      animate={{ scale: [1, 1.08, 1], opacity: [0.75, 1, 0.75] }}
       transition={{ duration: 3.5, delay, repeat: Infinity, ease: "easeInOut" }}
     >
-      <Icon className="size-4 text-primary/70" strokeWidth={1.5} />
+      <Icon className="size-4 text-primary/90" strokeWidth={1.5} />
     </motion.div>
   );
 }
@@ -66,15 +66,15 @@ export function StoryVisual() {
     >
       {/* Orbit rings */}
       <svg className="absolute inset-0 w-full h-full" viewBox="0 0 300 280" fill="none" preserveAspectRatio="xMidYMid meet">
-        <circle cx="150" cy="140" r="80" stroke="oklch(0.78 0.15 195 / 10%)" strokeWidth="1" strokeDasharray="5 7" />
-        <circle cx="150" cy="140" r="115" stroke="oklch(0.78 0.15 195 / 6%)" strokeWidth="1" />
+        <circle cx="150" cy="140" r="80" stroke="oklch(0.91 0.28 128 / 25%)" strokeWidth="1" strokeDasharray="5 7" />
+        <circle cx="150" cy="140" r="115" stroke="oklch(0.91 0.28 128 / 16%)" strokeWidth="1" />
       </svg>
 
       {/* Central lock icon */}
       <motion.div
-        className="absolute flex items-center justify-center size-14 rounded-full border border-primary/30 bg-primary/10 shadow-[0_0_24px_oklch(0.78_0.15_195/25%)]"
+        className="absolute flex items-center justify-center size-14 border border-primary/50 bg-primary/14"
         style={{ left: "50%", top: "50%", transform: "translate(-50%, -50%)" }}
-        animate={{ boxShadow: ["0 0 16px oklch(0.78 0.15 195 / 20%)", "0 0 28px oklch(0.78 0.15 195 / 40%)", "0 0 16px oklch(0.78 0.15 195 / 20%)"] }}
+        animate={{ boxShadow: ["0 0 18px oklch(0.91 0.28 128 / 32%)", "0 0 36px oklch(0.91 0.28 128 / 65%)", "0 0 18px oklch(0.91 0.28 128 / 32%)"] }}
         transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
       >
         <Lock className="size-6 text-primary" strokeWidth={1.5} />

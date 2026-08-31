@@ -14,7 +14,7 @@ function CtaFragment({
   delay = 0,
   duration = 9,
   driftY = -12,
-  color = "oklch(0.78 0.15 195 / 25%)",
+  color = "oklch(0.91 0.28 128 / 28%)",
   size = "9px",
 }: {
   text: string;
@@ -74,7 +74,7 @@ export function HeroCTA() {
   return (
     <section className="relative overflow-hidden px-6 py-28 text-center">
 
-      {/* ── Background glow (animated, replaces static animate-pulse) ── */}
+      {/* ── Background glow ── */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 flex items-center justify-center"
@@ -88,36 +88,35 @@ export function HeroCTA() {
       </div>
 
       {/* ── Ambient floating digital fragments ── */}
-      {/* Positioned at section edges, well clear of the centred text block */}
       <CtaFragment
         text="<>"
         x="3%"  y="10%"
         delay={0}   duration={9}  driftY={-14}
-        color="oklch(0.78 0.15 195 / 22%)" size="11px"
+        color="oklch(0.91 0.28 128 / 28%)" size="11px"
       />
       <CtaFragment
         text="{}"
         x="90%" y="15%"
         delay={1.8} duration={10} driftY={-10}
-        color="oklch(0.78 0.15 195 / 22%)" size="11px"
+        color="oklch(0.91 0.28 128 / 28%)" size="11px"
       />
       <CtaFragment
         text="01"
         x="4%"  y="70%"
         delay={2.5} duration={8}  driftY={-16}
-        color="oklch(0.72 0.17 155 / 28%)" size="10px"
+        color="oklch(0.80 0.22 142 / 35%)" size="10px"
       />
       <CtaFragment
         text="//"
         x="88%" y="72%"
         delay={1.0} duration={11} driftY={-12}
-        color="oklch(0.72 0.17 155 / 22%)" size="9px"
+        color="oklch(0.80 0.22 142 / 28%)" size="9px"
       />
       <CtaFragment
         text="SYS"
         x="92%" y="44%"
         delay={3.3} duration={12} driftY={-8}
-        color="oklch(0.78 0.15 195 / 18%)" size="9px"
+        color="oklch(0.91 0.28 128 / 24%)" size="9px"
       />
 
       {/* ── Main content with staggered entrance ── */}
@@ -144,9 +143,9 @@ export function HeroCTA() {
                 className="glow-cyan font-mono-data text-lg text-primary sm:text-xl"
                 animate={{
                   textShadow: [
-                    "0 0 8px oklch(0.78 0.15 195 / 40%), 0 0 20px oklch(0.78 0.15 195 / 15%)",
-                    "0 0 22px oklch(0.78 0.15 195 / 80%), 0 0 48px oklch(0.78 0.15 195 / 38%)",
-                    "0 0 8px oklch(0.78 0.15 195 / 40%), 0 0 20px oklch(0.78 0.15 195 / 15%)",
+                    "0 0 8px oklch(0.91 0.28 128 / 45%), 0 0 20px oklch(0.91 0.28 128 / 18%)",
+                    "0 0 22px oklch(0.91 0.28 128 / 85%), 0 0 48px oklch(0.91 0.28 128 / 42%)",
+                    "0 0 8px oklch(0.91 0.28 128 / 45%), 0 0 20px oklch(0.91 0.28 128 / 18%)",
                   ],
                 }}
                 transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut" }}
@@ -160,7 +159,7 @@ export function HeroCTA() {
                 className="absolute inset-0 pointer-events-none"
                 style={{
                   background:
-                    "linear-gradient(105deg, transparent 20%, oklch(0.78 0.15 195 / 55%) 50%, transparent 80%)",
+                    "linear-gradient(105deg, transparent 20%, oklch(0.91 0.28 128 / 60%) 50%, transparent 80%)",
                   mixBlendMode: "screen",
                 }}
                 animate={{ x: ["-180%", "280%"] }}
@@ -182,12 +181,12 @@ export function HeroCTA() {
         <motion.div variants={enterItem} className="mb-4">
           <motion.p
             className="font-mono-data text-lg sm:text-xl"
-            style={{ color: "oklch(0.72 0.17 155)" }}
+            style={{ color: "oklch(0.80 0.22 142)" }}
             animate={{
               textShadow: [
-                "0 0 8px oklch(0.72 0.17 155 / 28%)",
-                "0 0 24px oklch(0.72 0.17 155 / 65%)",
-                "0 0 8px oklch(0.72 0.17 155 / 28%)",
+                "0 0 8px oklch(0.80 0.22 142 / 30%)",
+                "0 0 24px oklch(0.80 0.22 142 / 70%)",
+                "0 0 8px oklch(0.80 0.22 142 / 30%)",
               ],
               opacity: [0.82, 1, 0.82],
             }}
@@ -200,7 +199,7 @@ export function HeroCTA() {
               style={{
                 display: "inline-block",
                 lineHeight: 1,
-                color: "oklch(0.72 0.17 155)",
+                color: "oklch(0.80 0.22 142)",
               }}
               animate={{ opacity: [1, 1, 0, 0] }}
               transition={{
@@ -224,9 +223,9 @@ export function HeroCTA() {
             animate={{
               y: [0, -3, 0, -1.5, 0],
               textShadow: [
-                "0 0 14px oklch(0.78 0.15 195 / 15%)",
-                "0 0 32px oklch(0.78 0.15 195 / 40%)",
-                "0 0 14px oklch(0.78 0.15 195 / 15%)",
+                "0 0 14px oklch(0.91 0.28 128 / 18%)",
+                "0 0 32px oklch(0.91 0.28 128 / 44%)",
+                "0 0 14px oklch(0.91 0.28 128 / 18%)",
               ],
               filter: ["brightness(1)", "brightness(1.2)", "brightness(1)"],
             }}
@@ -245,16 +244,15 @@ export function HeroCTA() {
         >
           {/* ── REGISTER TEAM ── */}
           <motion.div
-            className="relative overflow-hidden rounded-md"
-            /* Idle outer glow pulse; whileHover takes priority on hover */
+            className="relative overflow-hidden"
             animate={
               registerHovered
                 ? {}
                 : {
                     boxShadow: [
-                      "0 0 12px oklch(0.78 0.15 195 / 22%), 0 0 0px oklch(0.78 0.15 195 / 0%)",
-                      "0 0 30px oklch(0.78 0.15 195 / 52%), 0 0 55px oklch(0.78 0.15 195 / 14%)",
-                      "0 0 12px oklch(0.78 0.15 195 / 22%), 0 0 0px oklch(0.78 0.15 195 / 0%)",
+                      "0 0 12px oklch(0.91 0.28 128 / 25%), 0 0 0px oklch(0.91 0.28 128 / 0%)",
+                      "0 0 30px oklch(0.91 0.28 128 / 58%), 0 0 55px oklch(0.91 0.28 128 / 16%)",
+                      "0 0 12px oklch(0.91 0.28 128 / 25%), 0 0 0px oklch(0.91 0.28 128 / 0%)",
                     ],
                   }
             }
@@ -263,7 +261,7 @@ export function HeroCTA() {
               scale: 1.02,
               y: -3,
               boxShadow:
-                "0 6px 40px oklch(0.78 0.15 195 / 60%), 0 0 60px oklch(0.78 0.15 195 / 22%)",
+                "0 6px 40px oklch(0.91 0.28 128 / 65%), 0 0 60px oklch(0.91 0.28 128 / 25%)",
               transition: { duration: 0.18, ease: "easeOut" },
             }}
             onHoverStart={() => setRegisterHovered(true)}
@@ -284,7 +282,7 @@ export function HeroCTA() {
               className="absolute inset-0 pointer-events-none"
               style={{
                 background:
-                  "linear-gradient(90deg, transparent 0%, oklch(0.78 0.15 195 / 38%) 50%, transparent 100%)",
+                  "linear-gradient(90deg, transparent 0%, oklch(0.91 0.28 128 / 42%) 50%, transparent 100%)",
               }}
               animate={{ x: registerHovered ? "200%" : "-130%" }}
               transition={{ duration: 0.48, ease: "easeInOut" }}
@@ -293,26 +291,24 @@ export function HeroCTA() {
 
           {/* ── LOGIN ── */}
           <motion.div
-            className="rounded-md"
-            /* Idle subtle border glow */
             animate={{
               boxShadow: [
-                "0 0 0px oklch(0.78 0.15 195 / 0%)",
-                "0 0 12px oklch(0.78 0.15 195 / 22%)",
-                "0 0 0px oklch(0.78 0.15 195 / 0%)",
+                "0 0 0px oklch(0.91 0.28 128 / 0%)",
+                "0 0 12px oklch(0.91 0.28 128 / 25%)",
+                "0 0 0px oklch(0.91 0.28 128 / 0%)",
               ],
             }}
             transition={{ duration: 3.5, repeat: Infinity, ease: "easeInOut", delay: 1.3 }}
             whileHover={{
               y: -2,
-              boxShadow: "0 4px 24px oklch(0.78 0.15 195 / 38%)",
+              boxShadow: "0 4px 24px oklch(0.91 0.28 128 / 42%)",
               transition: { duration: 0.18, ease: "easeOut" },
             }}
           >
             <Button
               size="lg"
               variant="outline"
-              className="font-mono-data transition-colors duration-200 hover:border-primary/60 hover:bg-primary/[0.06]"
+              className="font-mono-data transition-colors duration-200 hover:border-primary/65 hover:bg-primary/[0.06]"
               render={<a href="/login" />}
               nativeButton={false}
             >
@@ -332,7 +328,7 @@ export function HeroCTA() {
             {/* Blinking status dot */}
             <motion.span
               className="text-[11px] leading-none"
-              style={{ color: "oklch(0.72 0.17 155)" }}
+              style={{ color: "oklch(0.80 0.22 142)" }}
               animate={{ opacity: [1, 0.15, 1] }}
               transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
             >
@@ -342,7 +338,7 @@ export function HeroCTA() {
             {/* Label with opacity pulse */}
             <motion.span
               className="font-mono-data text-[11px] tracking-widest"
-              style={{ color: "oklch(0.72 0.17 155 / 72%)" }}
+              style={{ color: "oklch(0.80 0.22 142 / 75%)" }}
               animate={{ opacity: [0.6, 1, 0.6] }}
               transition={{ duration: 2.6, repeat: Infinity, ease: "easeInOut" }}
             >
